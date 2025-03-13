@@ -17,16 +17,17 @@ export default function App() {
     <>
       <header className="bg-blue-950 py-5">
       <div className="max-w-4xl lg:mx-auto md:mx-6 flex justify-between items-center">
-        <h1 className="text-lg font-medium uppercase text-white text-center ml-4 md:ml-0">
+        <h1 className="text-lg font-medium uppercase text-white text-center ml-2 md:ml-0">
           Contador de calorías
         </h1>
         <button className="bg-yellow-400 text-black 
-            px-6 py-2 rounded-lg uppercase font-medium
+            mr-2
+            px-6 py-2 rounded-lg uppercase font-normal
             disabled:opacity-10 disabled:cursor-not-allowed
           hover:bg-yellow-300 transition duration-300" disabled={!canResetApp()}
           onClick={() => dispatch({type: 'reset-app'})}
           >
-          Reiniciar app
+          Reiniciar
         </button>
       </div>
       </header>
